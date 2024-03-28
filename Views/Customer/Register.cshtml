@@ -1,0 +1,48 @@
+@model Customer
+
+<form asp-action="Register" method="post">
+    <div class="mb-3">
+        <label for="CompanyName" class="form-label">Company Name</label>
+        <input type="text" class="form-control" id="CompanyName" name="CompanyName">
+        <span class="text-danger" asp-validation-for="CompanyName"></span>
+    </div>
+
+     <div class="mb-3">
+        <label for="Address" class="form-label">Address</label>
+        <input type="text" class="form-control" id="Address" name="Address">
+    </div>
+
+    <div class="mb-3">
+        <label for="City" class="form-label">City</label>
+        <input type="text" class="form-control" id="City" name="City">
+    </div>
+
+    <div class="mb-3">
+        <label for="Region" class="form-label">Region</label>
+        <input type="text" class="form-control" id="Region" name="Region">
+    </div>
+
+    <div class="mb-3">
+        <label for="PostalCode" class="form-label">Postal Code</label>
+        <input type="text" class="form-control" id="PostalCode" name="PostalCode">
+    </div>
+
+    <div class="mb-3">
+        <label for="Country" class="form-label">Country</label>
+        <input type="text" class="form-control" id="Country" name="Country">
+    </div>
+
+    <div class="mb-3">
+        <label for="Phone" class="form-label">Phone</label>
+        <input type="text" class="form-control" id="Phone" name="Phone">
+    </div>
+
+    <div class="mb-3">
+        <label for="Fax" class="form-label">Fax</label>
+        <input type="text" class="form-control" id="Fax" name="Fax">
+    </div> 
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+

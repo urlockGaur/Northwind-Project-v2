@@ -13,11 +13,13 @@ namespace Northwind.Controllers
     return View(sortedCategories);
   }
 
-  public IActionResult Index(int CategoryId) {
+  public IActionResult Product(int CategoryId) {
     var products = _dataContext.Products.Where(p => p.CategoryId == CategoryId && !p.Discontinued).ToList();
     return View(products);
   }
 
   
     }
+
+    
 }

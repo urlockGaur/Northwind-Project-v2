@@ -1,0 +1,16 @@
+@model IEnumerable<Discount>
+
+<div class="bg-dark m-1 p-1 text-white"><h4>Current Discounts</h4></div>
+
+<ul class="list-group">
+    @foreach (var discount in Model)
+    {
+        <li class="list-group-item list-group-item-secondary">
+            <strong>@discount.Title</strong> - @discount.Description
+            <br/>
+            Discount: @discount.DiscountPercent.ToString("P") on @discount.Product.ProductName
+            <br/>
+            Valid from @discount.StartTime.ToShortDateString() to @discount.EndTime.ToShortDateString()
+        </li>
+    }
+</ul>

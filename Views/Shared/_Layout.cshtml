@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="~/client.css" />
 </head>
 <body>
+    
+
      <nav class="navbar navbar-expand-md bg-primary-subtle">
         <div class="container-fluid">
              <a class="navbar-brand" asp-controller="Home" asp-action="Index"><i class="bi bi-compass"></i> Northwind</a>
@@ -31,11 +33,11 @@
                          <li><a class="dropdown-item" href="/Product/Category"><i class="bi bi-list"></i> Browse Categories</a></li>
                         <li><a class="dropdown-item" href="#"><i class="bi bi-search"></i> Product Search</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-tags"></i> Current Discounts</a></li>
+                        <li><a class="dropdown-item" asp-controller="Discount" asp-action="Discount"><i class="bi bi-tags"></i> Current Discounts</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-people"></i> Customers</a>
+                    <a class="nav-link" asp-controller="Customer" asp-action="Register"><i class="bi bi-people"></i> Customers</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
